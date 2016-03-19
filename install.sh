@@ -13,4 +13,4 @@ cp ./i3blocks.conf /home/$USER/.i3blocks.conf
 cp ./config /home/$USER/.config/i3/
 sudo cp ./i3status.conf /etc/
 
-echo -e 'Copied config files, reload your i3wm to see the effect'
+echo 'Copied config files, reload your i3wm to see the effect'
