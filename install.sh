@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ! $(ls /usr/bin/sudo) || ! $(ls /usr/bin/i3blocks)];
+if [ ! $(ls /usr/bin/sudo) || ! $(ls /usr/bin/i3blocks) || ! $(ls /usr/bin/git) ];
 then
     echo "You don't have necessary packages installed"
 else
