@@ -14,10 +14,11 @@ set $mod Mod4
 font pango:Ubuntu Bold 10
 
 # Set wallpaper
-exec --no-startup-id feh --bg-scale /home/jm33/Pictures/wpp.png
+exec --no-startup-id feh --bg-scale /usr/share/wallpapers/Next/contents/images/1920x1080.png
 
 # Disable CapsLock
 exec --no-startup-id /home/jm33/sh/caps.sh
+exec --no-startup-id /home/jm33/sh/touchpad_libinput.sh
 
 
 # Audio mixer in systray
@@ -54,7 +55,7 @@ bindsym $mod+i exec --no-startup-id hexchat
 bindsym $mod+e exec --no-startup-id pcmanfm
 
 # Start emacs
-# bindsym $mod+n exec --no-startup-id emacs
+bindsym $mod+n exec --no-startup-id emacs
 
 # Start KeepNote
 bindsym $mod+Ctrl+k exec --no-startup-id keepnote
@@ -103,7 +104,7 @@ bindcode 233 exec --no-startup-id xbacklight -inc 20 # increase screen brightnes
 bindcode 232 exec --no-startup-id xbacklight -dec 20 # decrease screen brightness
 
 # Toggle touchpad
-bindsym XF86TouchpadToggle exec --no-startup-id /home/jm33/sh/touchpad.sh
+bindsym XF86TouchpadToggle exec --no-startup-id /home/jm33/sh/touchpad_libinput.sh
 
 # change focus
 bindsym $mod+j focus left
@@ -145,6 +146,8 @@ bindsym $mod+t layout tabbed
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
+
+for_window [title="Google Chrome"] border pixel 1
 
 # change focus between tiling / floating windows
 #bindsym $mod+space focus mode_toggle
