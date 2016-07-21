@@ -20,6 +20,11 @@ cp ./config /home/$USER/.config/i3/
 echo ''
 echo 'Requesting root privilege...'
 sudo cp ./i3status.conf /etc/
+sudo cp ./v6.sh /etc/ && chmod 755 /etc/v6.sh
+
+echo ''
+echo 'Cleaning up...'
+sudo rm ../i3wm-config -rf
 
 echo ''
 echo '+SUCCESS: Copied config files, reload your i3wm to see the effect'
