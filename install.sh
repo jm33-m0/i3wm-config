@@ -20,7 +20,7 @@ cp ./config /home/$USER/.config/i3/
 echo ''
 echo 'Requesting root privilege...'
 sudo cp ./i3status.conf /etc/
-sudo cp ./v6.sh /etc/ && chmod 755 /etc/v6.sh
+sudo cp ./v6.sh /etc/ && sudo chmod 755 /etc/v6.sh
 
 echo ''
 echo 'Cleaning up...'
