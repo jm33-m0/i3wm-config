@@ -18,16 +18,21 @@ git clone https://github.com/jm33-m0/i3wm-config.git && cd i3wm-config
 echo '____________________________________________________________________________'
 
 echo ''
-echo 'Installing...'
+echo '+INFO: Installing...'
+
+echo '____________________________________________________________________________'
 cp ./i3blocks.conf /home/$USER/.i3blocks.conf
 cp ./config /home/$USER/.config/i3/
+echo '____________________________________________________________________________'
 echo ''
-echo 'Requesting root privilege...'
-sudo cp ./i3status.conf /etc/
-sudo cp ./v6.sh /etc/ && sudo chmod 755 /etc/v6.sh
+echo '+INFO: Requesting root privilege...'
+echo '____________________________________________________________________________'
+sudo cp ./i3status.conf /etc/ -v
+sudo cp ./v6.sh /etc/ -v && sudo chmod 755 /etc/v6.sh
+echo '____________________________________________________________________________'
 
 echo ''
-echo 'Cleaning up...'
+echo '+INFO: Cleaning up...'
 sudo rm ../i3wm-config -rf
 
 echo ''
