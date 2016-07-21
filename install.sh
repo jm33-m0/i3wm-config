@@ -21,8 +21,8 @@ echo ''
 echo '+INFO: Installing...'
 
 echo '____________________________________________________________________________'
-cp ./i3blocks.conf /home/$USER/.i3blocks.conf
-cp ./config /home/$USER/.config/i3/
+cp ./i3blocks.conf /home/$USER/.i3blocks.conf -v
+cp ./config /home/$USER/.config/i3/ -v
 echo '____________________________________________________________________________'
 echo ''
 echo '+INFO: Requesting root privilege...'
