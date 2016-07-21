@@ -13,8 +13,12 @@ echo ''
 printf "+INFO: Ready to install config files..."
 echo ''
 
+echo '____________________________________________________________________________'
 git clone https://github.com/jm33-m0/i3wm-config.git && cd i3wm-config
+echo '____________________________________________________________________________'
 
+echo ''
+echo 'Installing...'
 cp ./i3blocks.conf /home/$USER/.i3blocks.conf
 cp ./config /home/$USER/.config/i3/
 echo ''
