@@ -14,7 +14,7 @@ set $mod Mod4
 font pango:Ubuntu Bold 10
 
 # Set wallpaper
-exec --no-startup-id feh --bg-scale /usr/share/wallpapers/Next/contents/images/1920x1080.png
+exec --no-startup-id feh --bg-scale /home/jm33/Pictures/wall.jpg
 
 # Disable CapsLock
 exec --no-startup-id /home/jm33/sh/caps.sh
