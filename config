@@ -7,6 +7,8 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+new_window pixel 0
+
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -15,6 +17,9 @@ font pango:Ubuntu Bold 10
 
 # Set wallpaper
 exec --no-startup-id feh --bg-scale /home/jm33/Pictures/wall.jpg
+
+# Start compton compositer
+exec --no-startup-id compton -b --vsync opengl --xrender-sync
 
 # Disable CapsLock
 exec --no-startup-id /home/jm33/sh/caps.sh
@@ -38,6 +43,9 @@ bindsym $mod+p exec --no-startup-id /home/jm33/sh/scrot.sh
 
 # Start Chromium
 bindsym $mod+c exec --no-startup-id chromium
+
+# Start Atom
+bindsym $mod+a exec --no-startup-id atom
 
 # Start Firefox
 bindsym $mod+w exec --no-startup-id firefox
@@ -80,7 +88,7 @@ bindsym $mod+Ctrl+l exec --no-startup-id ~/sh/lk.sh
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id xfce4-terminal
+bindsym $mod+Return exec --no-startup-id termite
 
 # kill focused window
 bindsym $mod+q kill
@@ -153,7 +161,7 @@ for_window [title="Google Chrome"] border pixel 1
 #bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod+Ctrl+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
